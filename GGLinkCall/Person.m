@@ -10,4 +10,28 @@
 
 @implementation Person
 
+
+// Person覆写的方法
+- ( Person *(^)() )eat
+{
+    return ^{
+        NSLog(@"吃饭");
+        return self;
+    };
+}
+- ( Person *(^)() )learn
+{
+    return ^{
+        NSLog(@"学习");
+        return self;
+    };
+}
+- ( Person *(^)() )play
+{
+    return ^{
+        NSLog(@"娱乐");
+        return self;
+    };
+}
+
 @end

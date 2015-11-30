@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
+@property (nonatomic, readonly) Person *(^eat)();
+@property (nonatomic, readonly) Person *(^learn)();
+@property (nonatomic, readonly) Person *(^play)();
+
 
 @end
