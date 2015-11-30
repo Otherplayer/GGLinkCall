@@ -20,7 +20,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     Person *person = [[Person alloc] init];
-    person.learn().eat().play();
+    person.learn().eat().play().eatSomeThing(@"薯条");
     
     
     

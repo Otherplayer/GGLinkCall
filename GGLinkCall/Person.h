@@ -10,6 +10,7 @@
 
 @interface Person : NSObject
 @property (nonatomic, readonly) Person *(^eat)();
+@property (nonatomic, readonly) Person *(^eatSomeThing)(NSString *food);
 @property (nonatomic, readonly) Person *(^learn)();
 @property (nonatomic, readonly) Person *(^play)();
 

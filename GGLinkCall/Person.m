@@ -34,4 +34,18 @@
     };
 }
 
+- (Person *(^)(NSString *))eatSomeThing{
+    return ^(NSString *food){
+        NSLog(@"吃%@",food);
+        return self;
+    };
+}
+
+//// 带参数的链式调用
+//- (Person *(^)( NSString* food ) )eat{
+//    return ^( NSString* food ){
+//        NSLog(@"吃饭---- %@",food);
+//        return self;
+//    };
+//}
 @end
